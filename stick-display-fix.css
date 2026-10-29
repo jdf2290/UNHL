@@ -1,0 +1,15 @@
+
+/* UNHL weapon display revision: no overlay obscuring the equipment image */
+.cinematic-weapon .cinematic-spec{display:none!important}
+.cinematic-weapon .cinematic-title{position:relative!important;z-index:3!important}
+.cinematic-weapon .cinematic-stick-name{display:block!important;color:#b9d0db!important;font-weight:800!important;letter-spacing:.07em!important;line-height:1.2!important;text-transform:uppercase!important;max-width:100%!important;overflow-wrap:break-word!important}
+.cinematic-weapon .cinematic-image-wrap{left:3%!important;right:3%!important;width:94%!important;top:114px!important;height:calc(100% - 128px)!important;bottom:12px!important;z-index:1!important;pointer-events:none!important}
+.cinematic-weapon .cinematic-stick{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:rotate(-8deg) scale(1.03)!important}
+@media(max-width:700px){
+ .cinematic-weapon{height:410px!important;min-height:410px!important}
+ .cinematic-weapon .cinematic-title{padding:15px 12px 0!important;align-items:flex-start!important}
+ .cinematic-weapon .cinematic-title h3{font-size:clamp(27px,7.5vw,39px)!important}
+ .cinematic-weapon .cinematic-stick-name{font-size:clamp(13px,3.5vw,17px)!important;letter-spacing:.04em!important;margin-top:8px!important}
+ .cinematic-weapon .cinematic-image-wrap{top:104px!important;bottom:8px!important;height:calc(100% - 112px)!important;left:2%!important;right:2%!important;width:96%!important}
+ .cinematic-weapon .cinematic-stick{transform:rotate(-8deg) scale(1.05)!important}
+}

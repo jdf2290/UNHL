@@ -117,9 +117,8 @@ window.UNHL_RENDER_WEAPON = function(name, career, currentSeason, currentRank, s
     </div>
     <div class="cinematic-overview" data-loadout-panel="overview">
     <div class="cinematic-weapon">
-      <div class="cinematic-title"><span class="cinematic-target" aria-hidden="true">⊕</span><div><h3>WEAPON OF CHOICE</h3><p>PRIMARY SCORING STICK</p></div></div>
+      <div class="cinematic-title"><span class="cinematic-target" aria-hidden="true">⊕</span><div><h3>WEAPON OF CHOICE</h3><p class="cinematic-stick-name">${safe(brand)} ${safe(model)}</p></div></div>
       <div class="cinematic-image-wrap ${photo?'has-photo':''}">${photo?`<img class="cinematic-stick" src="${photo}" alt="${safe(brand)} ${safe(model)} hockey stick" loading="eager">`:`<div class="cinematic-no-image">STICK IMAGE UNAVAILABLE</div>`}</div>
-      <div class="cinematic-spec"><span>${safe(brand)}</span><h4>${safe(model)}</h4><div class="cinematic-chip">WEAPON OF CHOICE</div><p>${safe(name.toUpperCase())}'S TRUSTED STICK<br>FOR GETTING THE JOB DONE.</p></div>
     </div>
     <div class="cinematic-stats"><div><span class="cinematic-stat-symbol">⊕</span><strong>${stats('g')}</strong><span>GOALS<small>${safe(season)} SEASON</small></span></div><div><span class="cinematic-stat-symbol">◇</span><strong>${stats('a')}</strong><span>ASSISTS<small>${safe(season)} SEASON</small></span></div><div><span class="cinematic-stat-symbol">☆</span><strong>${stats('pts')}</strong><span>POINTS<small>${safe(season)} SEASON</small></span></div><div><span class="cinematic-stat-symbol">▥</span><strong>${rank}</strong><span>SCORING RANK<small>${safe(season)} SEASON</small></span></div></div>
     <p class="cinematic-disclaimer">Season statistics and scoring rank are based on the latest available UNHL season. Equipment is the player's reported stick; goals and assists are not attributed to a particular stick.</p>
