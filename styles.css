@@ -131,3 +131,35 @@ tbody tr:hover{background:#e4f1e8}
 .btn{background:var(--red)}
 footer{background:#101a1b;border-top:5px solid var(--court);color:#e0eee5}
 @media(max-width:760px){.hero{min-height:240px}.hero:before{opacity:.24}nav button.active{border-left-color:var(--red)}}
+
+
+/* UNHL Armory: game-inspired loadout panel, without using the court photograph */
+.armory-section{margin:32px 0 38px}
+.armory-heading{margin-bottom:14px}
+.armory-heading h2{font-weight:900;letter-spacing:.09em;margin:4px 0 0}
+.armory-kicker,.armory-field-label{font:700 10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.16em;color:#8ccbb0}
+.armory-card{--weapon-accent:#df364a;position:relative;isolation:isolate;overflow:hidden;border:1px solid #415c5b;border-radius:15px;color:#f1f7f7;background:radial-gradient(ellipse at 68% 35%,#21483e 0%,#111f25 52%,#090f17 100%);box-shadow:0 15px 40px #0004}
+.armory-blue{--weapon-accent:#489aff}
+.armory-blackout{--weapon-accent:#aa3943}
+.armory-mesh{position:absolute;inset:0;opacity:.17;pointer-events:none;z-index:-1;background:repeating-linear-gradient(45deg,transparent 0 17px,#88b09b 18px,transparent 19px 36px),repeating-linear-gradient(-45deg,transparent 0 17px,#88b09b 18px,transparent 19px 36px)}
+.armory-topline{display:flex;justify-content:space-between;gap:10px;padding:17px 21px 0;color:#b7c9c9;font:700 10px ui-monospace,monospace;letter-spacing:.09em}
+.armory-topline span:last-child{color:#a6d9bf}
+.armory-weapon-stage{height:205px;position:relative;overflow:hidden;background:radial-gradient(ellipse at center,#345e5322,transparent 67%)}
+.armory-scan{position:absolute;left:8%;right:8%;top:49%;height:1px;background:linear-gradient(90deg,transparent,var(--weapon-accent),transparent);box-shadow:0 0 22px var(--weapon-accent);opacity:.55}
+.armory-stick{position:absolute;width:min(76%,600px);height:36px;left:12%;top:48%;transform:rotate(-21deg);filter:drop-shadow(0 9px 9px #000c) drop-shadow(0 0 9px var(--weapon-accent))}
+.armory-shaft{display:block;position:absolute;left:0;right:11%;top:14px;height:9px;border:1px solid #8b969b;background:linear-gradient(180deg,#77828b,#141b25 32%,#0c1018 66%,#626d74);clip-path:polygon(0 15%,100% 0,100% 100%,0 85%)}
+.armory-shaft:after{content:"";position:absolute;left:22%;top:0;height:100%;width:17%;background:var(--weapon-accent);opacity:.9;transform:skew(-28deg)}
+.armory-blade{display:block;position:absolute;right:0;top:13px;width:15%;height:30px;border-radius:2px 3px 15px 3px;background:linear-gradient(155deg,#717f83,#0a1018 46%,#2b3339);clip-path:polygon(0 0,28% 0,34% 53%,100% 55%,100% 94%,23% 100%,9% 73%)}
+.armory-crosshair{position:absolute;color:#8bd7b6;opacity:.6;font:24px ui-monospace,monospace}
+.armory-crosshair-a{left:8%;top:24%}.armory-crosshair-b{right:9%;bottom:19%}
+.armory-information{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:20px;padding:20px 22px;border-top:1px solid #63877c60;background:#08131bd9}
+.armory-equipment h3{color:#fff;font-size:clamp(21px,3.5vw,32px);line-height:1.1;text-transform:uppercase;letter-spacing:.03em;margin:9px 0}
+.armory-brand,.armory-colorway{font:700 11px ui-monospace,monospace;letter-spacing:.08em;color:#b9cacc}
+.armory-colorway{display:inline-block;margin-top:10px;padding:5px 8px;border:1px solid #489aff;color:#89c4ff}
+.armory-stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.armory-stat-grid>div{border-left:2px solid var(--weapon-accent);padding-left:10px}
+.armory-stat-grid strong{display:block;color:#fff;font-size:clamp(24px,4vw,37px);font-weight:900;line-height:1.1}
+.armory-stat-grid span{font:700 10px ui-monospace,monospace;letter-spacing:.09em;color:#afc3c1}
+.armory-disclaimer{position:relative;color:#aebfc0;font-size:11px;line-height:1.5;margin:0;padding:12px 22px;border-top:1px solid #48645c55;background:#0a151be8}
+.armory-unidentified .armory-stick{opacity:.35;filter:grayscale(1)}
+@media(max-width:620px){.armory-topline{font-size:8px;padding:14px 14px 0}.armory-weapon-stage{height:155px}.armory-information{grid-template-columns:1fr;padding:17px;gap:24px}.armory-disclaimer{padding:12px 17px}.armory-stat-grid strong{font-size:30px}}
