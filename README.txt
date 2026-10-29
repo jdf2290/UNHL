@@ -18,3 +18,7 @@ PUBLISH TO GITHUB (iPhone or desktop):
 IMPORTANT: Do not upload the outer ZIP as the website source or create an extra unhl_site directory inside your repository if your site files are currently in the repository root.
 
 The original Google Sheet and existing live deployment are not modified by creating this package.
+
+UNHL ARMORY: armory.js contains 18 player equipment assignments. Player profiles now show Weapon of Choice with career skater goals/assists/points. Equipment artwork is a stylized generic silhouette; it does not purport to depict each exact model. To update equipment, edit armory.js. Upload all files together, including armory.js.
+
+2026 UNHL LOADOUT EDITION: This package implements the requested cinematic loadout and live latest-season points-based rank. Ties share a rank; players absent from the latest season display NR. Career goals/assists/points remain career totals. Real player-supplied photographs are included for Lisman and Dylan Z; other models intentionally use an illustrated placeholder until suitable licensed/authorized photographs are supplied. All files and weapons/ directory must be uploaded together. Cole manufacturer = Origins Unknown.
