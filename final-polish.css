@@ -1,0 +1,18 @@
+/* Final requested adjustments: slightly larger sticks, readable League News. */
+.cinematic-weapon .cinematic-stick{
+  width:91%!important;height:91%!important;
+  max-width:91%!important;max-height:91%!important;
+  transform:rotate(-3deg) scale(.91)!important;
+}
+@media(max-width:700px){
+ .cinematic-weapon .cinematic-stick{
+   width:89%!important;height:89%!important;
+   max-width:89%!important;max-height:89%!important;
+   transform:rotate(-3deg) scale(.91)!important;
+ }
+}
+/* Original theme uses dark navy headlines on dark panels. */
+.news-item,.news-item strong,.news-item p,.news-item time,
+#news-list .news-item,#news-list .news-item strong,#news-list .news-item time{
+ color:#fff!important;
+}
