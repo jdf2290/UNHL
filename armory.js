@@ -68,14 +68,34 @@ window.UNHL_WEAPONS = {
     "brand": "Warrior",
     "model": "QR6 S2 (Blue)"
   },
+  "Andrew": {"brand": "Mylec", "model": "MK3"},
+  "Tony G": {"brand": "Mylec", "model": "MK1"},
   "Jordan": {
     "brand": "Warrior",
     "model": "Covert QR5 30"
   }
 };
 window.UNHL_WEAPON_PHOTOS = {
-  "Lisman": "weapons/warrior-qr6-dark.jpg",
-  "Dylan Z": "weapons/warrior-qr6-blue.jpg"
+  "Cole": "weapons/cole-pro-blackout.png",
+  "Alex W": "weapons/bauer-i3000.png",
+  "Chris": "weapons/bauer-i3000.png",
+  "Jim": "weapons/bauer-i3000.png",
+  "Brandon": "weapons/bauer-vapor-volt.png",
+  "Steve": "weapons/mylec-mk3.png",
+  "Peter": "weapons/mylec-mk3.png",
+  "Nick L": "weapons/mylec-mk3.png",
+  "Jon": "weapons/mylec-mk3.png",
+  "Andrew": "weapons/mylec-mk3.png",
+  "Collin": "weapons/mylec-mk5.png",
+  "TJ": "weapons/mylec-mk5.png",
+  "Tony G": "weapons/mylec-mk1.png",
+  "Alex S": "weapons/sherwood-t60.png",
+  "Jeff": "weapons/sherwood-t60.png",
+  "Mike G": "weapons/warrior-alpha-lx3.png",
+  "Jordan": "weapons/warrior-qr5-30.png",
+  "Dylan": "weapons/bauer-vapor-s23.png",
+  "Lisman": "weapons/warrior-qr6-dark.png",
+  "Dylan Z": "weapons/warrior-qr6-blue.png"
 };
 window.UNHL_RENDER_WEAPON = function(name, career, currentSeason, currentRank) {
   const safe = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -93,9 +113,9 @@ window.UNHL_RENDER_WEAPON = function(name, career, currentSeason, currentRank) {
       <div class="loadout-title"><span class="loadout-reticle" aria-hidden="true">⊕</span><div><h2>WEAPON OF CHOICE</h2><p>PRIMARY SCORING STICK</p></div></div>
       <div class="loadout-content">
         <div class="loadout-art ${photo?'has-photo':'no-photo'}">
-          ${photo?`<img src="${photo}" alt="Photo of ${safe(brand)} ${safe(model)} hockey stick" loading="lazy">`:`<div class="loadout-placeholder"><div class="loadout-stick"><i></i><b></b></div><span>MODEL PHOTO PENDING</span></div>`}
+          ${photo?`<img src="${photo}" alt="Reference image of ${safe(brand)} ${safe(model)} hockey stick" loading="lazy">`:`<div class="loadout-placeholder"><div class="loadout-stick"><i></i><b></b></div><span>MODEL PHOTO PENDING</span></div>`}
         </div>
-        <div class="loadout-spec"><div class="loadout-brand">${safe(brand)}</div><h3>${safe(model)}</h3><div class="loadout-chip">PRIMARY LOADOUT</div><p>${photo?'PLAYER-SUPPLIED STICK PHOTOGRAPH':'STYLIZED PLACEHOLDER — MODEL PHOTO NOT YET VERIFIED'}</p></div>
+        <div class="loadout-spec"><div class="loadout-brand">${safe(brand)}</div><h3>${safe(model)}</h3><div class="loadout-chip">PRIMARY LOADOUT</div><p>${photo?'MODEL-REFERENCE STICK PHOTOGRAPH':'VISUAL REFERENCE PENDING — MODEL NOT YET VERIFIED'}</p></div>
       </div>
     </div>
     <div class="loadout-scorebar"><div><span class="loadout-stat-icon">⊕</span><strong>${stats('g')}</strong><span>CAREER GOALS</span></div><div><span class="loadout-stat-icon">◇</span><strong>${stats('a')}</strong><span>CAREER ASSISTS</span></div><div><span class="loadout-stat-icon">☆</span><strong>${stats('pts')}</strong><span>CAREER POINTS</span></div><div class="loadout-primary"><span class="loadout-stat-icon">▥</span><span>PRIMARY<br>LOADOUT SLOT</span></div></div>
