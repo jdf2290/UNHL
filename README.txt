@@ -1,9 +1,7 @@
-UNHL Cinematic Armory — exact reference-inspired full width layout.
+UNHL Cinematic Loadout - 2026 Season Statistics Update
 
-IMPORTANT: Upload index.html, app.js, armory.js, styles.css, data.js, and logo.jpg to the SAME GitHub repository root.
+Upload the contents of unhl_site to the root of your GitHub repository. The changes that matter are armory.js, app.js and styles.css. Stick images are embedded in armory.js; separate image uploads are not required.
 
-All 20 stick photos are embedded directly inside armory.js, so there are NO broken /weapons/ image dependencies. The weapons folder is included as a backup but is optional.
+The bottom four tiles now show goals, assists, points, and scoring rank for the latest available season (2026). Rank is calculated from season points, tied players share a rank. No rank appears beside the player name.
 
-The current-season rank updates from the latest season scoring leaderboard. The bottom row uses career goals, assists, points. No fictional stick-specific scoring data.
-
-Cole: Origins Unknown / Pro Blackout.
+NEW CINEMATIC IMAGE STYLE: Upload cinematic-fence.jpg and cinematic-court.jpg alongside styles.css, plus the updated styles.css. All other website files are included for convenience.

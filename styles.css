@@ -282,3 +282,34 @@ footer{background:#101a1b;border-top:5px solid var(--court);color:#e0eee5}
  .cinematic-stats div>span:last-child{font-size:9px}
  .cinematic-tab-content{padding:12px;min-height:220px}
 }
+
+/* 2026 season loadout: preserve all four live stat tiles on every viewport */
+.cinematic-identity .cinematic-rank{display:none!important}
+.cinematic-stats{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.cinematic-stats>div:last-child{display:flex!important}
+@media(max-width:700px){
+ .cinematic-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .cinematic-stats>div{min-height:90px!important;justify-content:center!important}
+ .cinematic-stats>div:nth-child(2){border-right:0!important}
+ .cinematic-stats>div:nth-child(-n+2){border-bottom:1px solid #879b9a60!important}
+ .cinematic-stats>div:last-child{display:flex!important}
+ .cinematic-stats strong{font-size:clamp(28px,8vw,42px)!important}
+ .cinematic-stats div>span:last-child{font-size:10px!important}
+ .cinematic-image-wrap{height:clamp(230px,72vw,360px)!important}
+ .cinematic-stick{object-fit:contain!important;max-width:100%;max-height:100%}
+}
+
+/* 2026 image-reference edition: authentic fence and court textures cropped from approved mockup; live HTML replaces every name, stat, and stick. */
+.cinematic-armory{border:0;background:linear-gradient(180deg,#050b10 0%,#0a1519 55%,#17382d 100%);box-shadow:0 18px 55px #000b;max-width:1536px;margin-inline:auto}
+.cinematic-armory:before{inset:0 0 40%;opacity:.56;mask-image:linear-gradient(#000 0%,#000 48%,transparent 100%);background:linear-gradient(90deg,#04090b80,#070d1170),url('cinematic-fence.jpg') center top/auto 240px repeat}
+.cinematic-armory:after{inset:65% 0 0;transform:none;background:linear-gradient(165deg,transparent 42%,#b8c5bc88 42.3%,transparent 42.7%),linear-gradient(20deg,transparent 68%,#b8c5bc66 68.3%,transparent 68.7%),linear-gradient(#11271d55,#10281c88),url('cinematic-court.jpg') center/auto 180px repeat}
+.cinematic-head{background:linear-gradient(90deg,#05090bc7,#050a0d38);border:0;padding-bottom:20px}
+.cinematic-identity h2{color:#f3f3ef;text-shadow:2px 2px #3b4347,0 0 20px #e9e9e930;letter-spacing:.01em}
+.cinematic-weapon{margin-top:10px;background:radial-gradient(ellipse at 12% 73%,#65162240,transparent 35%),radial-gradient(ellipse at 91% 83%,#0e3a704d,transparent 35%),linear-gradient(110deg,#060b0fef,#0a1117ed);border:1px solid #bc3047;border-right-color:#2465ac;box-shadow:-4px 0 18px #bc1c3752,4px 0 18px #1651a45c}
+.cinematic-title h3{letter-spacing:.015em;text-shadow:1px 2px #333a3c}
+.cinematic-spec{border:1px solid #8397a06b;background:#0a1119c7}
+.cinematic-stats{border:1px solid #b32c44;border-right-color:#2967a8;background:#080d12eb;box-shadow:-3px 0 12px #b827374b,3px 0 12px #15509a55}
+.cinematic-stats>div{border-right:1px solid #a1aab268}
+.cinematic-tabs button.selected{background:linear-gradient(110deg,#6c1d2f,#1a1018);box-shadow:inset 0 0 18px #ff324d66,0 0 16px #a92c4360}
+@media(min-width:701px){.cinematic-weapon{min-height:470px}.cinematic-image-wrap{inset:85px 23% 8px 10px}.cinematic-spec{right:3%;bottom:12%;width:27%}}
+@media(max-width:700px){.cinematic-armory:before{background-size:auto 170px}.cinematic-head{padding:14px 12px 18px}.cinematic-weapon{margin:10px 9px 0}.cinematic-title{padding:16px 12px 0}.cinematic-image-wrap{height:clamp(220px,58vw,315px);padding:8px}.cinematic-spec{margin:0 12px 12px}.cinematic-stats{margin:12px 9px 0;grid-template-columns:repeat(2,minmax(0,1fr))}.cinematic-stats>div{min-height:76px}.cinematic-tabs button{font-size:9px;padding:9px 8px}}
