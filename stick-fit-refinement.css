@@ -1,0 +1,7 @@
+/* Stick fitting refinement: keep full blade and shaft visible without distortion. */
+.cinematic-weapon .cinematic-image-wrap{box-sizing:border-box!important;overflow:hidden!important;left:5%!important;right:5%!important;width:90%!important;top:115px!important;bottom:22px!important;height:calc(100% - 137px)!important;padding:8px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.cinematic-weapon .cinematic-stick{display:block!important;box-sizing:border-box!important;object-fit:contain!important;object-position:center!important;width:86%!important;height:86%!important;max-width:86%!important;max-height:86%!important;transform:rotate(-3deg) scale(.88)!important;transform-origin:center center!important}
+@media(max-width:700px){
+.cinematic-weapon .cinematic-image-wrap{left:5%!important;right:5%!important;width:90%!important;top:104px!important;bottom:24px!important;height:calc(100% - 128px)!important;padding:10px!important}
+.cinematic-weapon .cinematic-stick{width:84%!important;height:84%!important;max-width:84%!important;max-height:84%!important;transform:rotate(-3deg) scale(.88)!important}
+}
