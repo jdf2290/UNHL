@@ -92,3 +92,42 @@ td,th{padding:11px 12px}
 .section{margin-top:29px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* UNHL COURT EDITION — inspired by the actual green court and black chain-link goal. No photo used. */
+:root{--red:#d72e43;--red-dark:#a7192c;--blue:#2468c5;--navy:#101820;--ink:#17252a;--muted:#637570;--line:#d6e1dc;--light:#edf3ef;--gold:#83ae96;--court:#477b63;--court-dark:#234f40;--shadow:0 10px 30px rgba(12,35,28,.08)}
+body{background:linear-gradient(180deg,#e5eee8 0,#f5f8f5 410px,#fff 850px)}
+header{border-bottom:1px solid #253c35}
+header:before{height:7px;background:linear-gradient(90deg,var(--red) 0 49.5%,#fff 49.5% 50.5%,var(--blue) 50.5% 100%)}
+.top{background:#fbfdfb}
+.top strong{letter-spacing:-2px}
+.top small{color:#4b7764}
+nav{background:#111a1c;border-bottom:4px solid var(--court)}
+nav button.active{color:#fff;border-bottom-color:var(--red);background:rgba(255,255,255,.055)}
+nav button:hover{background:#20362e;color:#fff}
+.hero{isolation:isolate;min-height:305px;border:1px solid #193e32;border-radius:14px;box-shadow:0 18px 42px rgba(10,37,28,.22);background:linear-gradient(110deg,rgba(9,20,23,.96) 0%,rgba(19,47,45,.94) 48%,rgba(33,94,72,.85) 100%),repeating-linear-gradient(45deg,transparent 0 19px,rgba(0,0,0,.6) 20px 22px,transparent 23px 40px),repeating-linear-gradient(-45deg,transparent 0 19px,rgba(0,0,0,.6) 20px 22px,transparent 23px 40px)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.38;background:repeating-linear-gradient(45deg,transparent 0 24px,rgba(0,0,0,.7) 25px 27px,transparent 28px 50px),repeating-linear-gradient(-45deg,transparent 0 24px,rgba(0,0,0,.7) 25px 27px,transparent 28px 50px);mask-image:linear-gradient(90deg,transparent 12%,#000 100%);pointer-events:none}
+.hero:after{content:"";position:absolute;inset:auto 0 0;z-index:-1;height:6px;border-radius:0 0 14px 14px;background:linear-gradient(90deg,var(--red) 0 48%,#f6f7f3 48% 52%,var(--blue) 52%)}
+.hero h1{text-shadow:0 3px 18px rgba(0,0,0,.25)}
+.hero .eyebrow{color:#b7e1c7}
+.hero img{border:4px solid #f5f7f3;box-shadow:0 0 0 5px rgba(22,28,27,.65),0 14px 25px rgba(0,0,0,.35)}
+.section-head{border-bottom:2px solid #d4e2d9}
+.section-head h2{border-left:5px solid var(--red)}
+.panel{border-color:#d5e3d9;border-radius:11px}
+.panel:hover{box-shadow:0 13px 34px rgba(20,58,42,.11)}
+.metric,.record-value{color:#153d32}
+.pill{background:#fbe5e8;color:#a8192e}
+.filters{background:#e8f1eb;border-color:#cfdfd4}
+.table-wrap{border-color:#cbded3}
+thead th{background:#173d32;color:#f2faf5;border-bottom:3px solid var(--blue)}
+th.sort:hover{color:#9dd6b3}
+tbody tr:nth-child(even){background:#f2f7f3}
+tbody tr:hover{background:#e4f1e8}
+.player-link,.link{color:#165db1}
+.profile-banner{background:linear-gradient(110deg,#e1eee6,#f9fcfa);border-color:#cbded3;border-left:6px solid var(--blue)}
+.avatar{background:linear-gradient(140deg,#111d1d,#295e4a 60%,#2764b8);border-color:#fff}
+.mini-grid .panel{border-top:4px solid var(--red)}
+.mini-grid .panel:nth-child(even){border-top-color:var(--blue)}
+.record-list .panel{border-left-color:var(--blue)}
+.btn{background:var(--red)}
+footer{background:#101a1b;border-top:5px solid var(--court);color:#e0eee5}
+@media(max-width:760px){.hero{min-height:240px}.hero:before{opacity:.24}nav button.active{border-left-color:var(--red)}}

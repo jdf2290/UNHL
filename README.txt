@@ -1,7 +1,20 @@
-UNHL Website Version 2
+UNHL COMPLETE WEBSITE PACKAGE — October 28, 2026
 
-Upload index.html, styles.css, app.js, data.js, logo.jpg, and README.txt to the root of your existing GitHub repository, replacing the old files. Vercel will redeploy automatically.
+This ZIP combines the latest 2026 skater statistics and career totals, restored goalie records with the Brandon win / Connor loss game correction, player win/loss records and seasonal breakdowns, and the Court Edition red/blue/green/black-chain-link design.
 
-Skater leaderboard excludes rows with zero skater games, but dual-position players appear in both sections when they have recorded appearances.
+No court photograph is used. The chain-link design is generated with CSS.
 
-Goalie statistics are reconstructed from game-sheet goalie rows, win/loss results, and final team scores. Goals allowed are inferred as the losing team score for a winning goalie and the winning team score for a losing goalie. GA/GP is per appearance, not NHL ice-time-adjusted GAA. Game dates without explicit years are assigned to seasons using game sequence and calendar boundaries; verify these against league records.
+PUBLISH TO GITHUB (iPhone or desktop):
+1. Extract the ZIP. Open the unhl_site folder.
+2. Upload or replace these files in the root of your existing UNHL-Website GitHub repository:
+   - index.html
+   - styles.css
+   - app.js
+   - data.js
+   - logo.jpg (only if missing; unchanged)
+3. Commit changes. Vercel should redeploy automatically if connected.
+4. Refresh your live site after deployment.
+
+IMPORTANT: Do not upload the outer ZIP as the website source or create an extra unhl_site directory inside your repository if your site files are currently in the repository root.
+
+The original Google Sheet and existing live deployment are not modified by creating this package.
