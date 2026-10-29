@@ -111,10 +111,11 @@ window.UNHL_RENDER_WEAPON = function(name, career, currentSeason, currentRank) {
   const blue = /blue/i.test(model);
   return `<section class="loadout cinematic-armory" aria-label="${safe(name)} weapon of choice">
     <div class="cinematic-head">
-      <div class="cinematic-head-top"><div class="cinematic-label">UNHL<br>PLAYER LOADOUT</div><div class="cinematic-tabs"><span class="selected">OVERVIEW</span><span>STATS</span><span>GAME LOG</span></div></div>
+      <div class="cinematic-head-top"><div class="cinematic-label">UNHL<br>PLAYER LOADOUT</div><div class="cinematic-tabs" role="tablist" aria-label="Player profile sections"><button type="button" class="selected" role="tab" aria-selected="true" data-loadout-tab="overview">OVERVIEW</button><button type="button" role="tab" aria-selected="false" data-loadout-tab="scoring">SCORING STATS</button><button type="button" role="tab" aria-selected="false" data-loadout-tab="winloss">WIN / LOSS</button></div></div>
       <div class="cinematic-identity"><h2>${safe(name)}</h2><span class="cinematic-rank">${rank}</span></div>
       <div class="cinematic-position">${safe(season)} SCORING RANK <span class="cinematic-stripe"></span></div>
     </div>
+    <div class="cinematic-overview" data-loadout-panel="overview">
     <div class="cinematic-weapon">
       <div class="cinematic-title"><span class="cinematic-target" aria-hidden="true">⊕</span><div><h3>WEAPON OF CHOICE</h3><p>PRIMARY SCORING STICK</p></div></div>
       <div class="cinematic-image-wrap ${photo?'has-photo':''}">${photo?`<img class="cinematic-stick" src="${photo}" alt="${safe(brand)} ${safe(model)} hockey stick" loading="eager">`:`<div class="cinematic-no-image">STICK IMAGE UNAVAILABLE</div>`}</div>
@@ -122,5 +123,8 @@ window.UNHL_RENDER_WEAPON = function(name, career, currentSeason, currentRank) {
     </div>
     <div class="cinematic-stats"><div><span class="cinematic-stat-symbol">⊕</span><strong>${stats('g')}</strong><span>GOALS<small>CAREER TOTAL</small></span></div><div><span class="cinematic-stat-symbol">◇</span><strong>${stats('a')}</strong><span>ASSISTS<small>CAREER TOTAL</small></span></div><div><span class="cinematic-stat-symbol">☆</span><strong>${stats('pts')}</strong><span>POINTS<small>CAREER TOTAL</small></span></div><div><span class="cinematic-stat-symbol">▥</span><span>PRIMARY<small>LOADOUT SLOT</small></span></div></div>
     <p class="cinematic-disclaimer">Rank reflects ${safe(season)} season points. Career stats are across all sticks; stick-specific scoring is not tracked.</p>
+    </div>
+    <div class="cinematic-tab-content" data-loadout-panel="scoring" hidden></div>
+    <div class="cinematic-tab-content" data-loadout-panel="winloss" hidden></div>
   </section>`;
 };
